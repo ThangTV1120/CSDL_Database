@@ -218,3 +218,4 @@ select * from NHANVIEN
 select DH.MA_NV, count(CTDH.MA_SP) as SoSanPham from DONHANG DH, ChiTietDonHang CTDH where DH.MA_DH=CTDH.MA_DH group by DH.MA_NV
 -- hiển thị số các khách hàng tương ứng với từng nhân viên 
 select NV.MA_NV,NV.HoTen_NV,count(DH.MA_KHACH) as SoKhachHang from DONHANG DH, NHANVIEN NV where DH.MA_NV= NV.MA_NV group by NV.HoTen_NV,NV.MA_NV
+-- Hết
